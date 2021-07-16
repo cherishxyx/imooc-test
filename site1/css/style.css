@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    list-style: none; /*取消列表左边样式*/
+}
+
+a{
+    text-decoration: none;  /*取消超链接下划线*/
+}
+
+input{
+    outline: none;
+    border: none;
+}
+/*导航条*/
+.wrapperBox{
+    width: 100%;/*随网页大小变化*/
+}
+
+.navBox{
+    width: 100%;/*随网页大小变化*/
+    height: 40px;
+    background: #00848A;
+}
+
+.navBar{
+    width: 1400px;
+    min-width: 1400px;
+    margin: 0 auto;
+}
+
+.navBar .logo{
+    width: 34px;
+    height: 34px;
+    float: left;
+}
+
+.logo img{
+    margin-top: 5px;
+}
+
+.navBar nav{
+    float: right;
+}
+
+.navBar nav ul li{
+    float: left;
+}
+
+.navBar nav ul li a{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+.navBar nav ul li a:hover{
+    color: #008484;
+    background: #ffffff;
+}
+
+/*banner*/
+
+.bannerBox{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.bannerBox li .img{
+    width: 100%;
+    display: none;
+}
+
+.bannerBox li .current{
+    display: block;
+}
+
+.bannerBox .dots{
+    position: absolute;
+    width: 100px;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.bannerBox .dots>span{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: #fff;
+    border-radius: 15px;
+    cursor:pointer;
+}
+
+.bannerBox .dots>span:not(:last-child){
+    margin-right: 5px;
+}
+.bannerBox .dots>span.square{
+    background: #00848A;
+}
+
+.searchBox{
+    background: #ffffff;
+    width: 975px;
+    height: 68px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -30px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 0 #ccc;
+}
+
+.searchBox form input{
+    width: 907px;
+    height: 68px;
+    float: left;
+    text-indent: 20px;
+    border-radius: 5px;
+}
+
+.searchBox form input[type="submit"]{
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    background: url("../img/icon/searchicon.png") no-repeat center;
+}
+
+/*特惠房源*/
+
+.oddsBox{
+    width: 1400px;
+    margin: 30px auto;
+}
+/*oddsBox标题*/
+.oddsBox .title p{
+    width: 200px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background: #00848A;
+    color: #fff;
+    font-size: 22px;
+    float: left;
+}
+
+.oddsBox .title span{
+    font-size: 22px;
+    display: inline-block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+
+.oddsBox .title span i{
+    display: inline-block;
+    font-style: normal;
+    padding: 0 5px;
+}
+
+.oddsBox .content{
+    clear: left;
+    height: 760px;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+.oddsBox .content .list .list_nav{
+    display: inline-block;
+    width: 100px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 0 #ccc;
+    box-sizing: border-box;
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.oddsBox .content .list .list_nav:last-child{
+    margin-right: 0;
+}
+
+.oddsBox .content .list .current_option{
+    background: #00848A;
+    color: #fff;
+}
+
+.productBox{
+    width: 100%;
+    clear: both;
+    margin: 20px 0;
+    display: none;
+}
+
+.infoBox{
+    width: 340px;
+    height: 350px;
+    float: left;
+    margin: 20px 13px 0 0 ;
+}
+
+.infoBox:nth-child(4){
+    margin-right: 0;
+}
+
+.infoBox p:first-child{
+    width: 334px;
+    height: 222px;
+    border: 1px solid #fff;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.infoBox p:first-child img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.title_l{
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.infoBox span{
+    font-size: 12px;
+}
+
+.infoBox p s{
+    margin: 0 5px;
+}
+
+.infoBox ul{
+    margin: 10px 0;
+}
+
+.infoBox ul li{
+    float: left;
+    font-size: 12px;
+}
+
+.infoBox ul li img{
+    margin-right: 15px;
+}
+
+.productInfo .current{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
